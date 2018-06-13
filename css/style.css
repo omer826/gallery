@@ -1,0 +1,16 @@
+
+#contact-box {
+    padding: 10px;
+}
+
+
+@media (min-width: 768px){
+    .Specialities {
+        padding: 80px 0;
+    }
+}
+
+.sub-header {
+    visibility: hidden;
+}
+

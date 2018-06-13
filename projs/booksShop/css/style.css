@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+.clickable{
+    cursor: pointer;
+}
+
+.books {
+    text-align:center;
+}
+
+.add-btn{
+    margin-bottom: 20px;
+}
+.main-content {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+.modal-win{
+    background: rgba(0, 0, 0, 0.575);
+    transition: all 0.5s;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 20px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.read-modal {
+    background: rgb(121, 118, 118);
+}
+
+
+.content-modal {
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+   
+}
+.inputs {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.add-btn {
+    margin-top: 10px; 
+}
+.input {
+    margin: 5px 0px;
+}
+.add-input:focus {
+    border:2px solid rgb(19, 152, 214);
+}
+.book-raed {
+    display: flex;
+    background-color: white;
+    box-shadow: 5px 5px 5px;
+    padding: 0 5px;
+    
+}
+.book-data {
+    align-self: center;
+    border: 5px solid #17a2b8;;
+    padding: 0 5px;
+    font-weight: bold;
+
+}
+ span {
+    font-weight: normal;
+ }
+.img-fluid {
+    max-width: 50%;
+}
+.collapse {
+    display:none;
+    opacity: 0;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.rate-btns {
+    margin-left: 5px;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.rate-btns>button {
+    margin-bottom: 2px;
+}
+.modal-dialog {
+    margin: 5px auto;
+}
+ 
+.navigation {
+   margin-left: 10px;
+}
+
+.demo-page {
+    text-align: center;
+}

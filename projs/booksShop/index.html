@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book-shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/bs4/css/bootstrap.css">
+</head>
+
+<body >
+    <main class="main-content">
+        <header>
+            <h1 class="display-1">Book Shop</h1>
+        </header>
+
+        <button onclick="readAndAddNewBook()" class="btn btn-primary btn-sm add-btn">Create new book</button>
+
+        <table class="table table-hover table-dark books">
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <div class="modal-win main-modal collapse">
+        <h1 class="display-1">Add new book</h1>
+        <button type="button" onclick="closeModal()" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="content-modal">
+            <div class="inputs">
+                <h5 class="display-5 name"> Book name:</h5>
+                <input class="input add-name" type="text" />
+                <h5 class="display-5"> Book price:</h5>
+                <input class="input add-price" type="text" />
+            </div>
+            <div class="update-book"></div>
+            <button class="btn btn-info add-new" onclick="onclickAdd()"> Add book</button>
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade read-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Book details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <div class="rate-btns">
+                        <button class="btn btn-info btn-sm" onclick="changeRate('+')">▲</button>
+                        <button class="btn btn-info btn-sm" onclick="changeRate('-')"> ▼</button>
+                    </div>
+
+                    <button type="button" class="close-btn btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="onSaveRate()" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="index.html">1</a></li>
+              <li class="page-item ">
+                <a class="page-link" href="page2.html">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="page2.html">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+    <script src="libs/jquery.js"></script>
+    <script src="libs/bs4/js/bootstrap.bundle.js"></script>
+    <script src="js/utilis-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
