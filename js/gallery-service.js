@@ -8,7 +8,7 @@ function createprojects() {
         createPorj('minesweeper',
             'Minesweeper', 'Clear a rectangular board containing hidden "mines" or bombs without detonating any of them',
             'Minesweeper is a single-player puzzle video game',
-            'minesweeperg',
+            'minesweeper',
             ['Mines', 'Flag'], setProjDate(2018, 6, 1)),
         createPorj('PictureGame',
             'In-PictureGame', 'Picks out sentences that accurately describe the pictures',
