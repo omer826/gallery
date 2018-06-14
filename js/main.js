@@ -41,7 +41,7 @@ function onOpenModal(proj) {
 function renderModal(proj) {
     var elModal = $('.modal-body');
     var strHtml = '';
-
+    // var elLink = $('.link-proj');
     if (elModal) {
         strHtml = `<h2>${proj.name}</h2>
             <p class="item-intro text-muted">${proj.title}</p>
@@ -52,8 +52,16 @@ function renderModal(proj) {
               <li>Client: Coding Academy</li>
               <li>Aboute: ${proj.labels}</li>
             </ul>`;
+            if (proj.isProjhHere){
+                strHtml += `<button class="btn btn-primary" type="button">
+                    <a class="link-proj" href=projs/${proj.id}/index.html target="_blank">
+                  go to Project
+                  </a>
+                </button>`
+            }
         elModal.html(strHtml)
     }
+
 }
 
 function onclickSubmit() {
@@ -64,9 +72,6 @@ function onclickSubmit() {
     if (isEmail) {
         var href = `https://mail.google.com/mail/?view=cm&fs=1&to=omer3026@gmail.com&su=${msgSubject}&body=${msgBody}`;
         window.open(href);
-        
-       
-   
     } else {
         $('.input-email').val('Email Not found');
     }

@@ -14,3 +14,21 @@
     visibility: hidden;
 }
 
+.link-proj {
+    color:white;
+}
+
+.link-proj.active,
+.link-proj:active,
+.link-proj:focus,
+.link-proj:hover {
+    color:white;
+}
+
+
+
+@media (max-width:400px){
+    .form-group > .form-control {
+        font-size: 0.8rem;
+    }
+}

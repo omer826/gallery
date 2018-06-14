@@ -19,7 +19,7 @@ function createprojects() {
             'Touch  Nums', 'Touch the numbers,  training your reflexes and peripheral vision',
             'Touch the numbers from 1 to 25 as fast as you can',
             'touchNums',
-            ['Number', 'Reflex'], setProjDate(2018, 5, 27)),
+            ['Number', 'Reflex'], setProjDate(2018, 5, 27),true),
         createPorj('ballBoard',
             'Ball  Board', 'Collect the random balls',
             'Every 5 seconds a new ball is added in a random empty cell',
@@ -34,14 +34,18 @@ function createprojects() {
             'Books  Shop', 'Manage your books shop online',
             'This application give the owner the ability to manage is books',
             'booksShop',
-            ['management', 'Book','shop'], setProjDate(2018, 6, 11))
-           
-
+            ['management', 'Book','shop'], setProjDate(2018, 6, 11),true),
+            createPorj('guessMe',
+            'Guess Me', 'Start to Tech Me More',
+            'This application give the user the chance to learn new thing,game with build qestion' +
+            ' and option to insert new qestions and answer','guessMe',
+            ['Thing', 'Geuss','Play'], setProjDate(2018, 6, 13),true)
     ];
     gProj = projects;
+    // Thinging game with qestion ,and option to insert new qestions and answer',
 }
 
-function createPorj(id, name, title, desc, url, labels, date) {
+function createPorj(id, name, title, desc, url, labels, date,ishere) {
     return {
         id: id,
         name: name,
@@ -49,7 +53,8 @@ function createPorj(id, name, title, desc, url, labels, date) {
         desc: desc,
         url: `img/portfolio/${url}.png`,
         publishedAt: date,
-        labels: labels
+        labels: labels,
+        isProjhHere:ishere || false
     }
 }
 
