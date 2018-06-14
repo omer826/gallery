@@ -19,7 +19,7 @@ function renderProjects(projs) {
             <i class="fa fa-plus fa-3x"></i>
           </div>
         </div>
-        <img class="img-fluid" src="${proj.url}" alt="img/load.png">
+        <img class="img-fluid port" src="${proj.url}" >
       </a>
       <div class="portfolio-caption">
         <h4>${proj.name}</h4>

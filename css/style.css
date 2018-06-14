@@ -32,3 +32,8 @@
         font-size: 0.8rem;
     }
 }
+
+.port:before { 
+    content:url('../img/noImg.png');
+    margin-bottom: 10px;
+  }
