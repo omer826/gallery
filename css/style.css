@@ -3,7 +3,9 @@
     padding: 10px;
 }
 
-
+button {
+    cursor: pointer;
+}
 @media (min-width: 768px){
     .Specialities {
         padding: 80px 0;
@@ -25,7 +27,13 @@
     color:white;
 }
 
-
+.navbar {
+    padding: 5px;
+}
+.sub-nav {
+    padding: 0 5px;
+    width: 95vw;
+}
 
 @media (max-width:400px){
     .form-group > .form-control {

@@ -604,11 +604,11 @@ pre code {
   width: 100%;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .container {
@@ -3427,13 +3427,13 @@ tbody.collapse.show {
   }
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
   }
-}
+} */
 
 @media (min-width: 992px) {
   .navbar-expand-lg {

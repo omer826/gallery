@@ -11,20 +11,20 @@ function createprojects() {
             'minesweeper',
             ['Mines', 'Flag'], setProjDate(2018, 6, 1)),
         createPorj('PictureGame',
-            'In-PictureGame', 'Picks out sentences that accurately describe the pictures',
-            'In-PictureGame is a single-player picture game',
+            'In-Picture Game', 'Picks out sentences that accurately describe the pictures',
+            'In-Picture Game is a single-player picture game',
             'PictureGame',
             ['Picture', 'Qst'], setProjDate(2018, 5, 28)),
-        createPorj('touchNums',
-            'Touch  Nums', 'Touch the numbers,  training your reflexes and peripheral vision',
-            'Touch the numbers from 1 to 25 as fast as you can',
-            'touchNums',
-            ['Number', 'Reflex'], setProjDate(2018, 5, 27),true),
         createPorj('ballBoard',
             'Ball  Board', 'Collect the random balls',
             'Every 5 seconds a new ball is added in a random empty cell',
             'ballBoard',
             ['Balls', 'Board'], setProjDate(2018, 6, 1)),
+        createPorj('touchNums',
+            'Touch  Nums', 'Touch the numbers,  training your reflexes and peripheral vision',
+            'Touch the numbers from 1 to 25 as fast as you can',
+            'touchNums',
+            ['Number', 'Reflex'], setProjDate(2018, 5, 27), true),
         createPorj('TodosList',
             'Todos List', 'Manage your daliy tasks',
             'This application allows users to keep track of tasks.',
@@ -34,18 +34,18 @@ function createprojects() {
             'Books  Shop', 'Manage your books shop online',
             'This application give the owner the ability to manage is books',
             'booksShop',
-            ['management', 'Book','shop'], setProjDate(2018, 6, 11),true),
-            createPorj('guessMe',
+            ['management', 'Book', 'shop'], setProjDate(2018, 6, 11), true),
+        createPorj('guessMe',
             'Guess Me', 'Start to Tech Me More',
             'This application give the user the chance to learn new thing,game with build qestion' +
-            ' and option to insert new qestions and answer','guessMe',
-            ['Thing', 'Geuss','Play'], setProjDate(2018, 6, 13),true)
+            ' and option to insert new qestions and answer', 'guessMe',
+            ['Thing', 'Geuss', 'Play'], setProjDate(2018, 6, 13), true)
     ];
     gProj = projects;
     // Thinging game with qestion ,and option to insert new qestions and answer',
 }
 
-function createPorj(id, name, title, desc, url, labels, date,ishere) {
+function createPorj(id, name, title, desc, url, labels, date, ishere) {
     return {
         id: id,
         name: name,
@@ -54,7 +54,7 @@ function createPorj(id, name, title, desc, url, labels, date,ishere) {
         url: `img/portfolio/${url}.png`,
         publishedAt: date,
         labels: labels,
-        isProjhHere:ishere || false
+        isProjhHere: ishere || false
     }
 }
 
