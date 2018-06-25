@@ -39,7 +39,11 @@ function createprojects() {
             'Guess Me', 'Start to Tech Me More',
             'This application give the user the chance to learn new thing,game with build qestion' +
             ' and option to insert new qestions and answer', 'guessMe',
-            ['Thing', 'Geuss', 'Play'], setProjDate(2018, 6, 13), true)
+            ['Thing', 'Geuss', 'Play'], setProjDate(2018, 6, 13), true),
+            createPorj('memeGen',
+            'Meme Genartor', 'Create your on meme img',
+            'This application give the user the chance to create is meme img ,publis or download..', 'memeGen',
+            ['Meme', 'facebook'], setProjDate(2018, 6, 25), true)
     ];
     gProj = projects;
     // Thinging game with qestion ,and option to insert new qestions and answer',
