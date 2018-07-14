@@ -30,11 +30,11 @@ function createprojects() {
             'This application allows users to keep track of tasks.',
             'TodosList',
             ['Task', 'Todo'], setProjDate(2018, 6, 4)),
-        createPorj('booksShop',
-            'Books  Shop', 'Manage your books shop online',
-            'This application give the owner the ability to manage is books',
-            'booksShop',
-            ['management', 'Book', 'shop'], setProjDate(2018, 6, 11), true),
+        // createPorj('booksShop',
+        //     'Books  Shop', 'Manage your books shop online',
+        //     'This application give the owner the ability to manage is books',
+        //     'booksShop',
+        //     ['management', 'Book', 'shop'], setProjDate(2018, 6, 11), true),
             createPorj('VueJSMissBook',
             'Book Management System', 'Manage your books  online',
             'This application give the owner the ability to manage is books',
@@ -72,9 +72,7 @@ function createPorj(id, name, title, desc, url, labels, date, ishere) {
     }
 }
 
-// function  getProjForDisplay() {
 
-// }
 
 function setProjDate(year, mon, day) {
     var publishDate = new Date(year, mon, day);
