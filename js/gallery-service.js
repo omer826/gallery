@@ -30,11 +30,16 @@ function createprojects() {
             'This application allows users to keep track of tasks.',
             'TodosList',
             ['Task', 'Todo'], setProjDate(2018, 6, 4)),
-        createPorj('booksShop',
-            'Books  Shop', 'Manage your books shop online',
+        // createPorj('booksShop',
+        //     'Books  Shop', 'Manage your books shop online',
+        //     'This application give the owner the ability to manage is books',
+        //     'booksShop',
+        //     ['management', 'Book', 'shop'], setProjDate(2018, 6, 11), true),
+            createPorj('VueJSMissBook',
+            'Book Management System', 'Manage your books  online',
             'This application give the owner the ability to manage is books',
-            'booksShop',
-            ['management', 'Book', 'shop'], setProjDate(2018, 6, 11), true),
+            'missBook',
+            ['management', 'Book', 'vueJs'], setProjDate(2018, 7, 2), true),
         createPorj('guessMe',
             'Guess Me', 'Start to Tech Me More',
             'This application give the user the chance to learn new thing,game with build qestion' +
@@ -43,7 +48,12 @@ function createprojects() {
             createPorj('memeGen',
             'Meme Genartor', 'Create your on meme img',
             'This application give the user the chance to create is meme img ,publis or download..', 'memeGen',
-            ['Meme', 'facebook'], setProjDate(2018, 6, 25), true)
+            ['Meme', 'facebook'], setProjDate(2018, 6, 25), true), 
+            createPorj('WikiTube',
+            'Wikipedia youTube', 'Find your searches on youtube and wikipedia',
+            'This application give the user the opportunity to search in yuotube and wikipedia together', 
+            'WikiTube',
+            ['wikipedai', 'youtube','song','knowledge'], setProjDate(2018, 6, 28), true)
     ];
     gProj = projects;
     // Thinging game with qestion ,and option to insert new qestions and answer',
